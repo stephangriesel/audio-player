@@ -3,3 +3,120 @@ html, body {
     margin:0;
     padding:0;
 }
+
+#bg {
+    height: 100vh;
+    width:100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+#bg img {
+    height:120vh;
+    width: 105%;
+    -webkit-filter:blur(15px);
+    /*top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);*/
+    z-index:1;
+}
+
+#layer {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,.4);
+    position: absolute;
+    z-index: 2;
+}
+
+#main {
+    width: 30%;
+    background-color: rgba(255, 255, 255,0.3);
+    border-radius: 15px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index:3;
+}
+
+#image img {
+    height: 180px;
+    width: 100%;
+    margin-top: -5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#player {
+    padding:25px;
+    color:#9292;
+    text-align: center;
+}
+
+#songtitle {
+    color:rgb(192, 187, 187);
+    width:300px;
+    text-align: center;
+    background-color:rgba(60, 77, 82,0.8);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-weight:normal;
+    position: absolute;
+    top:60%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border-radius:5px;
+}
+
+#buttons {
+    height:50px;
+    width:100%;
+    margin-top:50px;
+    position: relative;
+    top:10%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+#play {
+    width:60px;
+    height:60px;
+    border:0;
+    background-color:rgba(60, 77, 82,0.8);
+    color:#FFFFFF;
+    border-radius:45%;
+    outline:none;
+    cursor: pointer;
+    position:absolute;
+    top:10%;
+    left:50%;
+    transform: translate(-50%, 50%);
+}
+
+#next {
+    width:40px;
+    left:70%;
+    position: absolute;
+    border:0;
+    background-color:rgba(60, 77, 82,0.8);
+    color:#FFFFFF;
+    border-radius:30%;
+}
+
+#pre {
+    right:70%;
+    position: absolute;
+    width:40px;
+    border:0;
+    background-color:rgba(60, 77, 82,0.8);
+    color:#FFFFFF;
+    border-radius:30%;
+}
+
+/* #play img {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}*/
